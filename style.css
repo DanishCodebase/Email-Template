@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Inder&family=Inter&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: #777;
+}
+
+body {
+    justify-content: center;
+    font-family: 'Inder', sans-serif;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.congrats-email {
+    max-width: 600px;
+    border: 1px solid #f2f2f2;
+}
+
+header {
+    height: 80px;
+    justify-content: space-between;
+    padding: 0 20px;
+    border-bottom: 1px solid #f2f2f2;
+}
+
+.logo img {
+    height: 60px;
+}
+
+.view-link {
+    text-decoration: underline;
+}
+
+.view-link>img {
+    width: 20px;
+}
+
+.view-link>span {
+    margin-left: 5px;
+    font-size: 12px;
+    color: #777;
+}
+
+.main-body {
+    text-align: center;
+    padding: 20px 16px;
+    border-bottom: 1px solid #f2f2f2;
+}
+
+.main-body>img {
+    max-width: 400px;
+    width: 100%;
+    margin-top: 50px;
+    border: 2px solid #f2f2f2;
+    border-radius: 5px;
+}
+
+.main-body>h1 {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-weight: 400;
+    color: #f0b357;
+}
+
+.main-body>p {
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+    color: rgba(240, 179, 87, 0.85);
+    padding: 0 20px;
+    line-height: 150%;
+    margin-bottom: 35px;
+}
+
+footer {
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.logo-desc>p {
+    font-size: 13px;
+    max-width: 276px;
+    margin-top: 2px;
+}
+
+.socials>a {
+    margin-right: 16px;
+}
+
+.socials>a:last-child {
+    margin-right: 0;
+}
+
+@media (max-width: 425px) {
+    .main-body>img {
+        margin-top: 35px;
+    }
+
+    .main-body>p {
+        padding: 0;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: flex-start !important;
+    }
+
+    .socials {
+        width: 100%;
+        justify-content: space-between;
+        margin-top: 30px;
+        align-self: center;
+    }
+}
